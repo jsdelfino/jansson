@@ -79,7 +79,7 @@ int jsonp_dtostr(char *buffer, size_t size, double value)
     char *start, *end;
     size_t length;
 
-    ret = snprintf(buffer, size, "%.17g", value);
+    ret = snprintf(buffer, size, "%.16g", value);
     if(ret < 0)
         return -1;
 
